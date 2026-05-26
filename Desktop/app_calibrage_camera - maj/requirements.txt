@@ -1,7 +1,0 @@
-pillow
-numpy 
-tkinter 
-json
-zipfile 
-pandas
-os 
