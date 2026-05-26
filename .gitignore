@@ -1,0 +1,28 @@
+# Ignore model checkpoints and large weights
+*.pt
+*.pth
+*.ckpt
+
+# Common training outputs
+runs/
+weights/
+models/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environments
+venv/
+venv_*/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
