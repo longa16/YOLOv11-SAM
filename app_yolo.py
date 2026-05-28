@@ -166,23 +166,3 @@ if __name__ == "__main__":
     main()
 
 
-def main():
-    iface = gr.Interface(
-        fn=predict,
-        inputs=[
-            gr.Image(type="pil", label="Image à tester"),
-            gr.Slider(0.0, 1.0, value=0.25, step=0.01, label="Confidence"),
-            gr.Slider(0.0, 1.0, value=0.45, step=0.01, label="IOU"),
-            gr.Checkbox(value=True, label="Lisser les masques"),
-            gr.Slider(0.0, 1.0, value=0.6, step=0.05, label="Alpha overlay"),
-        ],
-        outputs=gr.Image(type="pil", label="Image annotée"),
-        title="Interface d'inférence YOLO",
-        description=f"Modèle chargé: {Path(model_path).name}",
-    )
-
-    iface.launch(server_name="0.0.0.0", share=True)
-
-
-if __name__ == "__main__":
-    main()
