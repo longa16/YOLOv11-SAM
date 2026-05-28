@@ -49,6 +49,7 @@ def find_model_path():
 
 # Load YOLO model
 model_path = find_model_path()
+#print("le modèle YOLO chargé est :", model_path)
 if model_path is None:
     raise SystemExit("Le modèle entrainé n'a pas été trouvé dans le dossier. Placez votre modèle YOLO ou modifiez le chemin.")
 model = YOLO(model_path)
