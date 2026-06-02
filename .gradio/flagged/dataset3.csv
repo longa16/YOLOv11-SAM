@@ -1,0 +1,2 @@
+Image à tester,Confidence,IOU,Utiliser SAM pour affiner les masques,Lisser les masques,Alpha overlay,Image annotée,timestamp
+.gradio\flagged\Image à tester\218f13342fb46bfa619b\image154.jpg,0.25,0.45,true,true,0.6,.gradio\flagged\Image annotée\77880d3ebe726f6ae58d\image.webp,2026-06-01 09:52:54.822804
