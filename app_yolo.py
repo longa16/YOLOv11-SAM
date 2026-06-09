@@ -138,7 +138,7 @@ def predict(image: Image.Image, conf: float = 0.25, iou: float = 0.70, use_sam: 
                 contours, _ = cv2.findContours(mask_bin, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
                 if len(contours) > 0:
                     # Pour éviter le bruit et les trous internes
-                    # On ne garde que le contour ayant la plus grande surface
+                    # On ne garde que le contour ayant la plus grande surface 
                     largest_contour = max(contours, key=cv2.contourArea)
                     if cv2.contourArea(largest_contour) > 100: # Ignore les poussières de moins de 100 pixels
                         all_contours.append(largest_contour)
