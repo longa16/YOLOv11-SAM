@@ -6,7 +6,7 @@ from ultralytics import YOLO
 
 # 1. CONFIGURATION
 # Remplacez par le chemin absolu ou relatif vers votre fichier data.yaml
-DATA_YAML_PATH = r"C:\Users\loic.ngassa\repo\dataset_obb\data.yaml" 
+DATA_YAML_PATH = r"C:\Users\loic.ngassa\Downloads\Kalash.yolov8-obb\data.yaml"
 EPOCHS = 50          # Nombre d'époques pour l'entraînement
 IMG_SIZE = 640       # Taille des images
 BATCH_SIZE = 16      # Taille du batch (à ajuster selon votre carte graphique)
@@ -40,7 +40,9 @@ if __name__ == '__main__':
             imgsz=IMG_SIZE,
             batch=BATCH_SIZE,
             name=f"train_{model_name}",
-            project="comparaison_models"
+            project=r"C:\Users\loic.ngassa\Desktop\YOLOv11-SAM\comparaison_models",
+            exist_ok=True,
+            workers=0,
         )
         
         # B. Évaluation (Validation/Test)

@@ -9,10 +9,10 @@ import gradio as gr
 from ultralytics import YOLO
 import cv2
 
-# Chemins vers les meilleurs poids entraînés (les plus récents)
+# Chemins vers les meilleurs poids entraînés
 MODELS = {
-    "YOLOv8n-OBB": r"C:\Users\loic.ngassa\runs\obb\comparaison_models\train_YOLOv8n-OBB-6\weights\best.pt",
-    "YOLOv8s-OBB": r"C:\Users\loic.ngassa\runs\obb\comparaison_models\train_YOLOv8s-OBB-2\weights\best.pt",
+    "YOLOv8n-OBB": r"C:\Users\loic.ngassa\Desktop\YOLOv11-SAM\comparaison_models\train_YOLOv8n-OBB\weights\best.pt",
+    "YOLOv8s-OBB": r"C:\Users\loic.ngassa\Desktop\YOLOv11-SAM\comparaison_models\train_YOLOv8s-OBB\weights\best.pt",
 }
 
 # Pré-chargement des modèles
